@@ -9,14 +9,23 @@ const settings = {
   },
   "packages": [
     {
-      name: "my-first-theme",
+      "name": "my-first-theme",
     },
     {
       "name": "@frontity/wp-source",
       "state": {
         "source": {
-          "url": "https://test.frontity.org"
+          "url": "http://cburton5.bitlampsites.com/wpd/php/final",
+          "postTypes": [
+            {
+              "type": "books",
+              "endpoint": "books",
+              "archive": "/books",
+            },
+
+          ]
         }
+
       }
     },
     "@frontity/tiny-router",
