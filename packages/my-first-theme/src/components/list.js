@@ -1,6 +1,6 @@
 // File: /packages/my-first-theme/src/components/list.js
 import React from "react"
-import {connect, styled} from "frontity"
+import { connect, styled} from "frontity"
 import Link from "@frontity/components/link"
 
 const List = ({ state }) => {
@@ -30,4 +30,16 @@ const Items = styled.div`
     color: red;
     text-decoration: none;
   }
-`;
+`
+const Menu = styled.nav`
+  display: flex;
+  flex-direction: row;
+  margin-top: 1em;
+  & > a {
+    margin-right: 1em;
+    color: steelblue;
+    text-decoration: none;
+  }
+`
+
+;

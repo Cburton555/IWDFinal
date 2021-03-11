@@ -32,12 +32,12 @@ const Root = ({ state }) => {
                 <HeaderContent>
                     <h1>Frontity Workshop</h1>
                     <p>Current URL: {state.router.link}</p>
-                    <nav>
+                    <Menu>
                         <Link link="/contact">Home</Link>
                         <Link link="/books">books</Link>
                         <Link link="/pilkey">About Us</Link>
 
-                    </nav>
+                    </Menu>
                 </HeaderContent>
             </Header>
             <Main>
@@ -96,7 +96,20 @@ const Main = styled.main`
     font-size: 0.8em;
     margin-bottom: 1em;
   }
+  
+ 
 `
+const Menu = styled.nav`
+  display: flex;
+  flex-direction: row;
+  margin-top: 1em;
+  & > a {
+    margin-right: 1em;
+    color: steelblue;
+    text-decoration: none;
+  }
+`
+
 
 
 
