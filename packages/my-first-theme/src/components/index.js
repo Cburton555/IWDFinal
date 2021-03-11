@@ -33,9 +33,10 @@ const Root = ({ state }) => {
                     <h1>Frontity Workshop</h1>
                     <p>Current URL: {state.router.link}</p>
                     <nav>
-                        <Link link="/">Home</Link>
+                        <Link link="/contact">Home</Link>
                         <Link link="/books">books</Link>
-                        <Link link="/about-us">About Us</Link>
+                        <Link link="/pilkey">About Us</Link>
+
                     </nav>
                 </HeaderContent>
             </Header>
@@ -45,6 +46,8 @@ const Root = ({ state }) => {
                     <Loading when={data.isFetching} />
                     <List when={data.isArchive} />
                     <Page when={data.isPage} />
+                    <Page when={data.isContact}/>
+                    <Page when={data.isPilkey}/>
                     <Post when={data.isPost} />
                     <Page when={data.isBooks} />
                     <Error when={data.isError} />

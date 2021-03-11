@@ -18,6 +18,7 @@ const Post = ({ state, libraries }) => {
                 <title>{post.title.rendered}</title>
                 <meta name="description" content={post.excerpt.rendered} />
             </Head>
+            <h1><FeaturedMedia id={post.featured_media}/></h1>
             <h2>{post.title.rendered}</h2>
             <p>
                 <strong>Posted: </strong>

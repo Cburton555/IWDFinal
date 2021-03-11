@@ -27,7 +27,7 @@ const Items = styled.div`
     display: block;
     margin: 6px 0;
     font-size: 1.2em;
-    color: steelblue;
+    color: red;
     text-decoration: none;
   }
 `;
