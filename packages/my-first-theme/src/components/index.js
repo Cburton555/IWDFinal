@@ -28,7 +28,8 @@ const Root = ({ state }) => {
           
         `}
             />
-            <Header>
+            <Header isPostType={data.isPostType}>
+                >
                 <HeaderContent>
                     <h1>Frontity Workshop</h1>
                     <p>Current URL: {state.router.link}</p>
@@ -62,13 +63,13 @@ const Root = ({ state }) => {
 }
 export default connect(Root)
 const Header = styled.header`
-  background-color: #e5edee;
+  background-color: #8B0000;
   border-width: 0 0 8px 0;
   border-style: solid;
   border-color: maroon;
 
   h1 {
-    color: #4a4a4a;
+    color: #ffffff;
   }
 `
 const HeaderContent = styled.div`
@@ -105,6 +106,15 @@ const Menu = styled.nav`
   margin-top: 1em;
   & > a {
     margin-right: 1em;
+    color: white;
+    text-decoration: none;
+  }
+`
+const Items = styled.div`
+  & > a {
+    display: block;
+    margin: 6px 0;
+    font-size: 1.2em;
     color: steelblue;
     text-decoration: none;
   }
